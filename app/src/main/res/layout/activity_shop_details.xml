@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.LoginActivity"
+        >
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_above="@+id/RR_book"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_160sdp">
+
+                    <ImageView
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/hotal1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_160sdp"
+                        >
+
+                    </ImageView>
+
+                    <ImageView
+                        android:id="@+id/img_back"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/back"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        >
+
+                    </ImageView>
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:fontFamily="@font/poppins_regular"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:id="@+id/sihn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Topper and Fade haircuts for men is invaluable when you are visiting  the barbershop and asking your barber for specific hairstyle in fact,not being."
+                    android:textColor="@color/natural_gray"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:background="@drawable/bg_rounded"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:weightSum="3"
+                    >
+
+                    <TextView
+                        android:background="@drawable/bg_blue_border"
+                        android:textSize="@dimen/_14sdp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="Services"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </TextView>
+
+                    <TextView
+                        android:textSize="@dimen/_14sdp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="Gallery"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </TextView>
+
+                    <TextView
+                        android:textSize="@dimen/_14sdp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="Reviews"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </TextView>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="item selected"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:background="@color/blue"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    >
+
+                    <CheckBox
+                        android:buttonTint="@color/white"
+                        android:checked="true"
+                        android:id="@+id/check"
+                        android:gravity="center"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+                    </CheckBox>
+
+                    <TextView
+                        android:layout_toRightOf="@+id/check"
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/_14sdp"
+                        android:text="Buzz Cut"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/_14sdp"
+                        android:text="+$9.00"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:fontFamily="@font/poppins_regular"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"              android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Please select more option if necessary:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:elevation="@dimen/_7sdp"
+                    android:background="@drawable/bg_rounded10"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    >
+
+                    <CheckBox
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:buttonTint="#0008ff"
+                        android:id="@+id/checkw"
+                        android:gravity="center"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+                    </CheckBox>
+
+                    <TextView
+                        android:layout_toRightOf="@+id/checkw"
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/_14sdp"
+                        android:text="Wash"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/_14sdp"
+                        android:text="+$9.00"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:elevation="@dimen/_7sdp"
+                    android:background="@drawable/bg_rounded10"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    >
+
+                    <CheckBox
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:buttonTint="#0008ff"
+                        android:id="@+id/checkx"
+                        android:gravity="center"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+                    </CheckBox>
+
+                    <TextView
+                        android:layout_toRightOf="@+id/checkx"
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/_14sdp"
+                        android:text="X-cut"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/_14sdp"
+                        android:text="+$9.00"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:elevation="@dimen/_7sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:background="@drawable/bg_rounded10"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    >
+
+                    <CheckBox
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:buttonTint="#0008ff"
+                        android:id="@+id/checky"
+                        android:gravity="center"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+                    </CheckBox>
+
+                    <TextView
+                        android:layout_toRightOf="@+id/checky"
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/_14sdp"
+                        android:text="Y- Cut"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/_14sdp"
+                        android:text="+$9.00"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+
+        <RelativeLayout
+            android:id="@+id/RR_book"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/blue"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            >
+
+
+
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/_14sdp"
+                android:text="BOOK"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <TextView
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/_14sdp"
+                android:text="+$9.00"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</layout>

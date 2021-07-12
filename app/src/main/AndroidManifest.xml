@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.my.sadebuser">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SadebUser">
+        <activity android:name=".act.NearMeAllListActivity"></activity>
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".act.ForogotPassword" />
+        <activity android:name=".act.ChooseLoginActivity" />
+        <activity android:name=".act.Login" />
+        <activity android:name=".act.Register" />
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".act.UpdateEmail" />
+        <activity android:name=".act.UpdateGender" />
+        <activity android:name=".act.UpdateName" />
+        <activity android:name=".act.UpdatePassword" />
+        <activity android:name=".act.UpdatePhoneNumber" />
+        <activity android:name=".act.ProfileActivity" />
+        <activity android:name=".act.InviteFriends" />
+        <activity android:name=".act.ShopDetailsActivity" />
+        <activity android:name=".act.ShopTimeAvailavility" />
+        <activity android:name=".act.PaymentOption" />
+    </application>
+
+</manifest>
