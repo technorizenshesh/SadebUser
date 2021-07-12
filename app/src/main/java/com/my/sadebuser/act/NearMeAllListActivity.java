@@ -14,6 +14,7 @@ import com.my.sadebuser.databinding.ActivityNearMeAllListBinding;
 public class NearMeAllListActivity extends AppCompatActivity {
 
     ActivityNearMeAllListBinding binding;
+
     private Fragment fragment;
 
     @Override
@@ -25,8 +26,6 @@ public class NearMeAllListActivity extends AppCompatActivity {
         loadFragment(fragment);
     }
 
-
-
     public void loadFragment(Fragment fragment) {
         // load fragment
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
@@ -34,4 +33,5 @@ public class NearMeAllListActivity extends AppCompatActivity {
         transaction.addToBackStack("home");
         transaction.commit();
     }
+
 }
