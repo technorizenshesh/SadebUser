@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <RelativeLayout
+        android:background="@drawable/gradient"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".activity.LoginActivity">
@@ -15,14 +16,15 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/_10sdp"
-                android:layout_marginTop="@dimen/_10sdp"
-                android:layout_marginRight="@dimen/_10sdp"
-                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginRight="@dimen/_12sdp"
+                android:layout_marginBottom="@dimen/_12sdp"
                 android:orientation="vertical">
 
 
                 <ImageView
+                    android:padding="@dimen/_5sdp"
                     android:layout_marginTop="@dimen/_40sdp"
                     android:id="@+id/iv_Logo"
                     android:layout_width="@dimen/_55sdp"
@@ -34,11 +36,11 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
                     android:text="Wellcome back to"
                     android:textColor="@color/black"
                     android:textStyle="bold"
-                    android:textSize="@dimen/_18sdp" />
+                    android:textSize="@dimen/_22sdp" />
 
                 <TextView
                     android:layout_marginTop="@dimen/_5sdp"
@@ -47,7 +49,7 @@
                     android:text="Login"
                     android:textColor="@color/black"
                     android:textStyle="bold"
-                    android:textSize="@dimen/_18sdp" />
+                    android:textSize="@dimen/_22sdp" />
 
                 <TextView
                     android:paddingLeft="@dimen/_3sdp"
@@ -56,22 +58,23 @@
                     android:layout_marginTop="@dimen/_20sdp"
                     android:text="Email/Mobile Number"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/_14sdp" />
+                    android:textSize="@dimen/_15sdp" />
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/_45sdp"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_5sdp"
                     android:background="@drawable/edt_bg">
 
                     <EditText
+                        android:id="@+id/et_Email"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:background="@null"
                         android:hint="example@gmail.com"
                         android:inputType="text"
                         android:maxLength="30"
-                        android:padding="@dimen/_10sdp"
+                        android:padding="@dimen/_12sdp"
                         android:singleLine="true"
                         android:textColor="@color/black"
                         android:textColorHint="@color/black"
@@ -84,25 +87,26 @@
                     android:paddingLeft="@dimen/_3sdp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
                     android:text="Password"
                     android:textColor="@color/black"
                     android:textSize="@dimen/_14sdp" />
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/_45sdp"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_5sdp"
                     android:background="@drawable/edt_bg">
 
                     <EditText
+                        android:id="@+id/et_Password"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:background="@null"
-                        android:text="91-9770531-114"
+                        android:hint="enter password"
                         android:inputType="textPassword"
                         android:maxLength="30"
-                        android:padding="@dimen/_10sdp"
+                        android:padding="@dimen/_12sdp"
                         android:singleLine="true"
                         android:textColor="@color/black"
                         android:textColorHint="@color/black"
@@ -143,7 +147,7 @@
                     android:paddingTop="@dimen/_8sdp"
                     android:text="Forgot Password ?"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/_14sdp"
+                    android:textSize="@dimen/_15sdp"
                     android:textStyle="bold" />
 
             </LinearLayout>
@@ -175,12 +179,18 @@
                 android:layout_marginLeft="@dimen/_5sdp"
                 android:fontFamily="@font/poppins_regular"
                 android:gravity="center"
-                android:text="Register"
-                android:textColor="@color/black"
+                android:text="Sign Up"
+                android:textColor="@color/blue"
                 android:textSize="@dimen/_12sdp"
                 android:textStyle="bold" />
 
         </LinearLayout>
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/loader"
+            android:id="@+id/loader_layout"/>
 
     </RelativeLayout>
 

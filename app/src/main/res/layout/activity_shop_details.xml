@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     >
 
-    <RelativeLayout
+    <LinearLayout
+        android:background="@drawable/gradient"
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".activity.LoginActivity"
         >
 
-        <androidx.core.widget.NestedScrollView
-            android:layout_above="@+id/RR_book"
+        <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            >
-
-
+             android:fillViewport="true">
             <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="match_parent"
@@ -25,43 +25,74 @@
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/_160sdp">
+                    android:layout_height="@dimen/_180sdp">
 
                     <ImageView
+                        android:id="@+id/iv_service"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/hotal1"
+                        android:src="@drawable/barbershop"
                         android:layout_width="match_parent"
-                        android:layout_height="@dimen/_160sdp"
+                        android:layout_height="@dimen/_180sdp"
                         >
 
                     </ImageView>
 
-                    <ImageView
-                        android:id="@+id/img_back"
+                    <RelativeLayout
                         android:layout_margin="@dimen/_10sdp"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/back"
-                        android:layout_width="@dimen/_35sdp"
-                        android:layout_height="@dimen/_35sdp"
-                        >
+                        android:id="@+id/rl_Back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_solid_white_search"
+                        android:gravity="center">
 
-                    </ImageView>
+                        <ImageView
+                            android:id="@+id/iv_Back"
+                            android:layout_width="36dp"
+                            android:layout_height="36sp"
+                            android:padding="10dp"
+                            android:src="@drawable/ic_shape"
+                            app:tint="@color/blue" />
+
+                    </RelativeLayout>
 
                 </RelativeLayout>
 
 
-                <TextView
-                    android:fontFamily="@font/poppins_regular"
-                    android:layout_marginTop="@dimen/_10sdp"
-                    android:layout_marginRight="@dimen/_10sdp"
-                    android:layout_marginLeft="@dimen/_10sdp"
-                    android:id="@+id/sihn"
-                    android:layout_width="wrap_content"
+                 <LinearLayout
+                     android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Topper and Fade haircuts for men is invaluable when you are visiting  the barbershop and asking your barber for specific hairstyle in fact,not being."
-                    android:textColor="@color/natural_gray"
-                    android:textSize="@dimen/_12sdp"
-                    android:textStyle="bold" />
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingBottom="16dp">
+
+
+                    <it.mike5v.viewmoretextview.ViewMoreTextView
+                        android:id="@+id/tv_Detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="16dp"
+                        android:textStyle="bold"                        android:textColor="@color/natural_gray"
+                        android:textSize="16dp"
+                        app:duration="500"
+                        app:ellipsizeText="Show More"
+                        app:ellipsizeTextColor="@color/blue"
+                        app:isExpanded="false"
+                        app:visibleLines="3" />
+
+                    <TextView
+                        android:id="@+id/tvDescription"
+                        android:text="Taper and Fade haircuts for men is invaluable when you’re
+visiting the barbershop and asking your barber for specific hairstyle.  In fact , not being   See More... "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="16dp"
+                        android:textStyle="bold"                        android:textColor="@color/natural_gray"
+                        android:textSize="@dimen/_12sdp" />
+
+
+                </LinearLayout>
+
 
                 <LinearLayout
                     android:orientation="horizontal"
@@ -73,7 +104,8 @@
                     >
 
                     <TextView
-                        android:background="@drawable/bg_blue_border"
+                        android:id="@+id/tv_Service"
+                        android:background="@drawable/bg_round"
                         android:textSize="@dimen/_14sdp"
                         android:gravity="center"
                         android:layout_gravity="center"
@@ -87,11 +119,14 @@
                     </TextView>
 
                     <TextView
+                         android:id="@+id/tv_gallery"
                         android:textSize="@dimen/_14sdp"
                         android:gravity="center"
+                        android:textColor="@color/black"
                         android:layout_gravity="center"
                         android:text="Gallery"
-                        android:layout_margin="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_marginVertical="@dimen/_5sdp"
                         android:layout_weight="1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
@@ -99,11 +134,14 @@
                     </TextView>
 
                     <TextView
+                         android:textColor="@color/black"
+                        android:id="@+id/tv_Reviews"
                         android:textSize="@dimen/_14sdp"
                         android:gravity="center"
                         android:layout_gravity="center"
                         android:text="Reviews"
-                        android:layout_margin="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_marginVertical="@dimen/_5sdp"
                         android:layout_weight="1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
@@ -113,280 +151,22 @@
 
                 </LinearLayout>
 
-                <TextView
-                    android:layout_marginTop="@dimen/_10sdp"
-                    android:fontFamily="@font/poppins_regular"
-                    android:layout_marginLeft="@dimen/_10sdp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="item selected"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/_14sdp"
-                    android:textStyle="bold" />
-
-                <RelativeLayout
-                    android:background="@color/blue"
-                    android:layout_marginTop="@dimen/_10sdp"
-                    android:layout_marginRight="@dimen/_10sdp"
-                    android:layout_marginLeft="@dimen/_10sdp"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/_45sdp"
-                    >
-
-                    <CheckBox
-                        android:buttonTint="@color/white"
-                        android:checked="true"
-                        android:id="@+id/check"
-                        android:gravity="center"
-                        android:layout_centerVertical="true"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        >
-
-                    </CheckBox>
-
-                    <TextView
-                        android:layout_toRightOf="@+id/check"
-                        android:layout_centerVertical="true"
-                        android:textSize="@dimen/_14sdp"
-                        android:text="Buzz Cut"
-                        android:textStyle="bold"
-                        android:textColor="@color/white"
-                        android:layout_weight="1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-
-                    </TextView>
-
-                    <TextView
-                        android:layout_marginRight="@dimen/_10sdp"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerVertical="true"
-                        android:textSize="@dimen/_14sdp"
-                        android:text="+$9.00"
-                        android:textStyle="bold"
-                        android:textColor="@color/white"
-                        android:layout_weight="1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-
-                    </TextView>
 
 
-                </RelativeLayout>
-
-                <TextView
-                    android:fontFamily="@font/poppins_regular"
-                    android:layout_marginTop="@dimen/_10sdp"
-                    android:layout_marginRight="@dimen/_10sdp"
-                    android:layout_marginLeft="@dimen/_10sdp"              android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Please select more option if necessary:"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/_14sdp"
-                    android:textStyle="bold" />
-
-                <RelativeLayout
-                    android:elevation="@dimen/_7sdp"
-                    android:background="@drawable/bg_rounded10"
-                    android:layout_marginTop="@dimen/_10sdp"
-                    android:layout_marginRight="@dimen/_10sdp"
-                    android:layout_marginLeft="@dimen/_10sdp"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/_45sdp"
-                    >
-
-                    <CheckBox
-                        android:layout_marginLeft="@dimen/_10sdp"
-                        android:buttonTint="#0008ff"
-                        android:id="@+id/checkw"
-                        android:gravity="center"
-                        android:layout_centerVertical="true"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        >
-
-                    </CheckBox>
-
-                    <TextView
-                        android:layout_toRightOf="@+id/checkw"
-                        android:layout_centerVertical="true"
-                        android:textSize="@dimen/_14sdp"
-                        android:text="Wash"
-                        android:textStyle="bold"
-                        android:layout_weight="1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-
-                    </TextView>
-
-                    <TextView
-                        android:layout_marginRight="@dimen/_10sdp"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerVertical="true"
-                        android:textSize="@dimen/_14sdp"
-                        android:text="+$9.00"
-                        android:textStyle="bold"
-                        android:layout_weight="1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-
-                    </TextView>
-
-
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:elevation="@dimen/_7sdp"
-                    android:background="@drawable/bg_rounded10"
-                    android:layout_marginTop="@dimen/_10sdp"
-                    android:layout_marginRight="@dimen/_10sdp"
-                    android:layout_marginLeft="@dimen/_10sdp"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/_45sdp"
-                    >
-
-                    <CheckBox
-                        android:layout_marginLeft="@dimen/_10sdp"
-                        android:buttonTint="#0008ff"
-                        android:id="@+id/checkx"
-                        android:gravity="center"
-                        android:layout_centerVertical="true"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        >
-
-                    </CheckBox>
-
-                    <TextView
-                        android:layout_toRightOf="@+id/checkx"
-                        android:layout_centerVertical="true"
-                        android:textSize="@dimen/_14sdp"
-                        android:text="X-cut"
-                        android:textStyle="bold"
-                        android:layout_weight="1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-
-                    </TextView>
-
-                    <TextView
-                        android:layout_marginRight="@dimen/_10sdp"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerVertical="true"
-                        android:textSize="@dimen/_14sdp"
-                        android:text="+$9.00"
-                        android:textStyle="bold"
-                        android:layout_weight="1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-
-                    </TextView>
-
-
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:elevation="@dimen/_7sdp"
-                    android:layout_marginBottom="@dimen/_10sdp"
-                    android:background="@drawable/bg_rounded10"
-                    android:layout_marginTop="@dimen/_10sdp"
-                    android:layout_marginRight="@dimen/_10sdp"
-                    android:layout_marginLeft="@dimen/_10sdp"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/_45sdp"
-                    >
-
-                    <CheckBox
-                        android:layout_marginLeft="@dimen/_10sdp"
-                        android:buttonTint="#0008ff"
-                        android:id="@+id/checky"
-                        android:gravity="center"
-                        android:layout_centerVertical="true"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        >
-
-                    </CheckBox>
-
-                    <TextView
-                        android:layout_toRightOf="@+id/checky"
-                        android:layout_centerVertical="true"
-                        android:textSize="@dimen/_14sdp"
-                        android:text="Y- Cut"
-                        android:textStyle="bold"
-                        android:layout_weight="1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-
-                    </TextView>
-
-                    <TextView
-                        android:layout_marginRight="@dimen/_10sdp"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerVertical="true"
-                        android:textSize="@dimen/_14sdp"
-                        android:text="+$9.00"
-                        android:textStyle="bold"
-                        android:layout_weight="1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-
-                    </TextView>
-
-
-                </RelativeLayout>
 
             </LinearLayout>
 
-        </androidx.core.widget.NestedScrollView>
+
+        </ScrollView>
 
 
-
-        <RelativeLayout
-            android:id="@+id/RR_book"
-            android:layout_marginBottom="@dimen/_10sdp"
-            android:layout_alignParentBottom="true"
-            android:background="@color/blue"
-            android:layout_marginTop="@dimen/_10sdp"
-            android:layout_marginRight="@dimen/_10sdp"
-            android:layout_marginLeft="@dimen/_10sdp"
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_45sdp"
-            >
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:id="@+id/frame"/>
 
 
-
-            <TextView
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
-                android:textSize="@dimen/_14sdp"
-                android:text="BOOK"
-                android:textStyle="bold"
-                android:textColor="@color/white"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-            </TextView>
-
-            <TextView
-                android:layout_marginRight="@dimen/_10sdp"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:textSize="@dimen/_14sdp"
-                android:text="+$9.00"
-                android:textStyle="bold"
-                android:textColor="@color/white"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-            </TextView>
-
-
-        </RelativeLayout>
-
-    </RelativeLayout>
+    </LinearLayout>
 
 </layout>

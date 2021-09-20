@@ -1,6 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8 (5)" project-jdk-type="JavaSDK">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Technorizen Software Solutuin/SadebUser/app/src/main/res/drawable-v24/ic_camera_with_bg.xml" value="0.2203125" />
+        <entry key="..\:/Technorizen Software Solutuin/SadebUser/app/src/main/res/drawable/bg_blue_border.xml" value="0.2203125" />
+        <entry key="..\:/Technorizen Software Solutuin/SadebUser/app/src/main/res/drawable/bg_round.xml" value="0.2203125" />
+        <entry key="..\:/Technorizen Software Solutuin/SadebUser/app/src/main/res/drawable/bg_rounded.xml" value="0.2203125" />
+        <entry key="..\:/Technorizen Software Solutuin/SadebUser/app/src/main/res/drawable/edt_bg.xml" value="0.2203125" />
+        <entry key="..\:/Technorizen Software Solutuin/SadebUser/app/src/main/res/drawable/ic_camera_with_bg.xml" value="0.2203125" />
+        <entry key="..\:/Technorizen Software Solutuin/SadebUser/app/src/main/res/drawable/ic_mob.xml" value="0.2203125" />
+        <entry key="..\:/Technorizen Software Solutuin/SadebUser/app/src/main/res/layout/activity_all_category.xml" value="0.19010416666666666" />
+        <entry key="..\:/Technorizen Software Solutuin/SadebUser/app/src/main/res/layout/activity_booking_details.xml" value="0.20416666666666666" />
+        <entry key="..\:/Technorizen Software Solutuin/SadebUser/app/src/main/res/layout/activity_forogot_password.xml" value="0.20416666666666666" />
+        <entry key="..\:/Technorizen Software Solutuin/SadebUser/app/src/main/res/layout/activity_otp_verification.xml" value="0.20416666666666666" />
+        <entry key="..\:/Technorizen Software Solutuin/SadebUser/app/src/main/res/layout/activity_profiile_change.xml" value="0.20416666666666666" />
+        <entry key="..\:/Technorizen Software Solutuin/SadebUser/app/src/main/res/layout/activity_profile.xml" value="0.20416666666666666" />
+        <entry key="..\:/Technorizen Software Solutuin/SadebUser/app/src/main/res/layout/activity_register.xml" value="0.20416666666666666" />
+        <entry key="..\:/Technorizen Software Solutuin/SadebUser/app/src/main/res/layout/activity_search.xml" value="0.20416666666666666" />
+        <entry key="..\:/Technorizen Software Solutuin/SadebUser/app/src/main/res/layout/activity_shop_details.xml" value="0.20416666666666666" />
+        <entry key="..\:/Technorizen Software Solutuin/SadebUser/app/src/main/res/layout/activity_shop_time_availavility.xml" value="0.20416666666666666" />
+        <entry key="..\:/Technorizen Software Solutuin/SadebUser/app/src/main/res/layout/activity_update_email.xml" value="0.20416666666666666" />
+        <entry key="..\:/Technorizen Software Solutuin/SadebUser/app/src/main/res/layout/activity_update_gender.xml" value="0.20416666666666666" />
+        <entry key="..\:/Technorizen Software Solutuin/SadebUser/app/src/main/res/layout/activity_update_name.xml" value="0.20416666666666666" />
+        <entry key="..\:/Technorizen Software Solutuin/SadebUser/app/src/main/res/layout/activity_update_phone_number.xml" value="0.20416666666666666" />
+        <entry key="..\:/Technorizen Software Solutuin/SadebUser/app/src/main/res/layout/fragment_home.xml" value="0.20416666666666666" />
+        <entry key="..\:/Technorizen Software Solutuin/SadebUser/app/src/main/res/layout/fragment_notification.xml" value="0.20416666666666666" />
+        <entry key="..\:/Technorizen Software Solutuin/SadebUser/app/src/main/res/layout/fragment_review.xml" value="0.20416666666666666" />
+        <entry key="..\:/Technorizen Software Solutuin/SadebUser/app/src/main/res/layout/fragment_services.xml" value="0.20416666666666666" />
+        <entry key="..\:/Technorizen Software Solutuin/SadebUser/app/src/main/res/layout/gender.xml" value="0.1" />
+        <entry key="..\:/Technorizen Software Solutuin/SadebUser/app/src/main/res/layout/item_category.xml" value="0.20416666666666666" />
+        <entry key="..\:/Technorizen Software Solutuin/SadebUser/app/src/main/res/layout/item_salooon.xml" value="0.20416666666666666" />
+        <entry key="..\:/Technorizen Software Solutuin/SadebUser/app/src/main/res/layout/notification.xml" value="0.20416666666666666" />
+        <entry key="..\:/Technorizen Software Solutuin/SadebUser/app/src/main/res/layout/review.xml" value="0.20416666666666666" />
+        <entry key="..\:/Technorizen Software Solutuin/SadebUser/app/src/main/res/layout/review_dialog.xml" value="0.20416666666666666" />
+        <entry key="..\:/Technorizen Software Solutuin/SadebUser/app/src/main/res/layout/suggestion.xml" value="0.20416666666666666" />
+        <entry key="..\:/Technorizen Software Solutuin/SadebUser/app/src/main/res/layout/time_slot.xml" value="0.20416666666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

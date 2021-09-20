@@ -1,4 +1,21 @@
 <resources>
     <string name="app_name">SadebUser</string>
     <string name="see_all"><U>See All</U></string>
+    <!--    Register-->
+    <string name="enter_Name">Enter Name</string>
+    <string name="text_register_no">Enter No</string>
+    <string name="text_register_right_no">Please enter a valid mobile number</string>
+    <string name="text_register_correct_email">Enter Correct Email</string>
+    <string name="text_register_password">Enter Long Password</string>
+    <string name="text_register_not_matched">Password Not Matched</string>
+    <string name="exist">You Don\'t Exist</string>
+
+    <string name="text_register_term">Accept Term And Condition</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello Blank Fragment</string>
+    <string name="title_activity_google_maps">Map</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="enter_pass">Enter Password</string>
+    <string name="field_required">Field Required</string>
+
 </resources>

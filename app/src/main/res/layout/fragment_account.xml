@@ -5,28 +5,29 @@
     >
 
     <RelativeLayout
-        android:background="@color/bg_home"
+        android:background="@drawable/gradient"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".ui.notifications.NotificationsFragment">
 
         <LinearLayout
+            android:background="@color/white"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/_45sdp"
-                >
+                android:layout_height="@dimen/_45sdp">
 
                 <TextView
-                    android:layout_centerHorizontal="true"
-                    android:layout_centerVertical="true"
+                     android:layout_centerVertical="true"
                     android:textStyle="bold"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/_18sdp"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_marginLeft="@dimen/_22sdp"
                     android:text="Account"
+                    android:fontFamily="@font/poppins_regular"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
 
@@ -37,16 +38,18 @@
 
             <RelativeLayout
                 android:id="@+id/RRProfile"
-                android:layout_marginTop="@dimen/_20sdp"
-                android:background="@color/white"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:background="@color/Light"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/_45sdp">
+                android:layout_height="wrap_content">
 
                 <ImageView
+                    android:layout_marginVertical="@dimen/_10sdp"
                     android:src="@drawable/profile"
                     android:id="@+id/imgFt1"
-                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginLeft="@dimen/_12sdp"
                     android:layout_centerVertical="true"
+                    android:padding="@dimen/_5sdp"
                     android:layout_width="@dimen/_25sdp"
                     android:layout_height="@dimen/_25sdp"
                     >
@@ -54,13 +57,15 @@
                 </ImageView>
 
                 <TextView
+                    android:layout_marginVertical="@dimen/_10sdp"
                     android:layout_toRightOf="@+id/imgFt1"
-                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginLeft="@dimen/_12sdp"
                     android:layout_centerVertical="true"
                     android:textStyle="bold"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/_18sdp"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/_12sdp"
                     android:text="Profile"
+                    android:fontFamily="@font/poppins_regular"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
 
@@ -70,15 +75,15 @@
 
             <RelativeLayout
                 android:id="@+id/RRpayment"
-                android:layout_marginTop="@dimen/_20sdp"
-                android:background="@color/white"
+                 android:background="@color/white"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_45sdp">
 
                 <ImageView
-                    android:src="@drawable/profile"
+                    android:src="@drawable/ic_payment"
                     android:id="@+id/imgFt"
-                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_12sdp"
                     android:layout_centerVertical="true"
                     android:layout_width="@dimen/_25sdp"
                     android:layout_height="@dimen/_25sdp"
@@ -88,11 +93,11 @@
 
                 <TextView
                     android:layout_toRightOf="@+id/imgFt"
-                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginLeft="@dimen/_12sdp"
                     android:layout_centerVertical="true"
                     android:textStyle="bold"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/_18sdp"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/_12sdp"
                     android:text="Payment"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">

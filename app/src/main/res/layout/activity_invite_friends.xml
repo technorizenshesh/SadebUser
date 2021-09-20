@@ -5,6 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <RelativeLayout
+        android:background="@drawable/gradient"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".activity.LoginActivity">
@@ -15,19 +16,17 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/_50sdp">
 
-            <RelativeLayout
-                android:id="@+id/RRback"
-                android:layout_width="@dimen/_50sdp"
-                android:layout_height="match_parent">
+            <ImageView
+                android:layout_marginLeft="@dimen/_7sdp"
+                android:layout_gravity="center_vertical"
+                android:padding="@dimen/_5sdp"
+                android:id="@+id/iv_Back"
+                android:layout_centerInParent="true"
+                android:src="@drawable/backnew"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp">
 
-                <ImageView
-                    android:layout_centerInParent="true"
-                    android:src="@drawable/backnew"
-                    android:layout_width="@dimen/_25sdp"
-                    android:layout_height="@dimen/_25sdp">
-
-                </ImageView>
-            </RelativeLayout>
+            </ImageView>
 
             <TextView
                 android:layout_marginLeft="@dimen/_20sdp"
@@ -38,9 +37,9 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:fontFamily="@font/poppins_regular"
-                android:text="Invite  Your friends"
-                android:textColor="@color/black"
-                android:textSize="@dimen/_14sdp"
+                android:text="Invite Your friends"
+                android:textColor="@color/dark"
+                android:textSize="@dimen/_18sdp"
                 android:textStyle="bold" />
 
         </LinearLayout>
@@ -67,31 +66,33 @@
                     android:layout_gravity="center"
                     android:fontFamily="@font/poppins_regular"
                     android:text="Refer friends to get ahed in the \n (queu (5 friends))"
-                    android:textColor="@color/natural_gray"
-                    android:textSize="@dimen/_14sdp"
-                    android:textStyle="bold" />
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="normal" />
 
 
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_marginTop="@dimen/_20sdp"
                     android:layout_gravity="center"
                     android:src="@drawable/invite"
-                    android:layout_width="@dimen/_250sdp"
-                    android:layout_height="@dimen/_250sdp"
+                    android:elevation="@dimen/_10sdp"
+                    android:layout_width="@dimen/_200sdp"
+                    android:layout_height="@dimen/_200sdp"
                     >
 
-                </ImageView>
+                </de.hdodenhof.circleimageview.CircleImageView>
 
                 <TextView
-                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
                     android:gravity="center"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:fontFamily="@font/poppins_regular"
                     android:text="Just share this code with your friends and ask them to signup and add this code.Both of you will get ahead of  the waitlist."
-                    android:textColor="@color/natural_gray"
+                    android:textColor="@color/black"
                     android:textSize="@dimen/_14sdp"
-                    android:textStyle="bold" />
+                    android:textStyle="normal" />
 
 
                 <LinearLayout
@@ -102,7 +103,7 @@
                     android:weightSum="2"
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/_45sdp">
+                    android:layout_height="@dimen/_40sdp">
 
 
                     <TextView
@@ -114,9 +115,9 @@
                         android:layout_height="match_parent"
                         android:fontFamily="@font/poppins_regular"
                         android:text="MARTHA035"
-                        android:textColor="@color/natural_gray"
+                        android:textColor="@color/black"
                         android:textSize="@dimen/_14sdp"
-                        android:textStyle="bold"
+                        android:textStyle="normal"
                         />
 
                     <TextView
@@ -130,22 +131,23 @@
                         android:text="Share Code"
                         android:textColor="@color/white"
                         android:textSize="@dimen/_14sdp"
-                        android:textStyle="bold"
+                        android:textStyle="normal"
                         />
 
 
                 </LinearLayout>
 
                 <TextView
+                    android:id="@+id/tv_Skip"
                     android:layout_margin="@dimen/_30sdp"
                     android:layout_gravity="center"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/poppins_regular"
                     android:text="Skip"
-                    android:textColor="@color/natural_gray"
+                    android:textColor="@color/black"
                     android:textSize="@dimen/_14sdp"
-                    android:textStyle="bold"
+                    android:textStyle="normal"
                     />
 
             </LinearLayout>

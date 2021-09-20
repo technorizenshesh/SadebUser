@@ -5,6 +5,7 @@
     >
 
     <RelativeLayout
+        android:background="@drawable/gradient"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".Activity.HomeActivity"
@@ -71,6 +72,7 @@
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:id="@+id/rr_my_booking"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -107,6 +109,7 @@
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:id="@+id/RR_Notification"
                     android:layout_marginLeft="@dimen/_7sdp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"

@@ -5,42 +5,43 @@
     >
 
     <RelativeLayout
+        android:background="@drawable/gradient"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".activity.LoginActivity"
         >
 
-        <RelativeLayout
+        <LinearLayout
+             android:gravity="center"
+            android:orientation="horizontal"
             android:id="@+id/RR_toolbar"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_50sdp">
 
-            <RelativeLayout
-                android:layout_width="@dimen/_50sdp"
-                android:layout_height="match_parent">
+            <ImageView
+                android:layout_marginLeft="@dimen/_7sdp"
+                android:padding="@dimen/_5sdp"
+                android:id="@+id/iv_Back"
+                 android:src="@drawable/backnew"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp">
 
-                <ImageView
-                    android:layout_centerInParent="true"
-                    android:src="@drawable/backnew"
-                    android:layout_width="@dimen/_25sdp"
-                    android:layout_height="@dimen/_25sdp">
-
-                </ImageView>
-            </RelativeLayout>
+            </ImageView>
 
 
             <TextView
-                android:layout_centerInParent="true"
-                android:fontFamily="@font/poppins_regular"
-                android:layout_width="wrap_content"
+                android:layout_marginRight="32dp"
+                android:gravity="center"
+                 android:fontFamily="@font/poppins_regular"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Booking Details"
-                android:textColor="@color/black"
+                android:textColor="@color/dark"
                 android:textSize="@dimen/_16sdp"
                 android:textStyle="bold" />
 
 
-        </RelativeLayout>
+        </LinearLayout>
 
         <View
             android:id="@+id/view"
@@ -65,6 +66,7 @@
                 >
 
                 <RelativeLayout
+                    android:layout_marginTop="@dimen/_12sdp"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_100sdp">
 
@@ -89,11 +91,12 @@
 
 
                         <TextView
+                            android:id="@+id/tv_Shopname"
                             android:fontFamily="@font/poppins_regular"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Men's Cuts"
-                            android:textColor="@color/black"
+                            android:textColor="@color/dark"
                             android:textSize="@dimen/_16sdp"
                             android:textStyle="bold" />
 
@@ -108,6 +111,7 @@
                             android:textStyle="bold" />
 
                         <TextView
+                            android:id="@+id/tv_AppointmentTime"
                             android:fontFamily="@font/poppins_regular"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -128,7 +132,7 @@
                     android:layout_marginLeft="@dimen/_10sdp"              android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Services"
-                    android:textColor="@color/black"
+                    android:textColor="@color/dark"
                     android:textSize="@dimen/_16sdp"
                     android:textStyle="bold" />
 
@@ -143,9 +147,10 @@
                     >
 
                     <TextView
+                        android:id="@+id/tv_Service_Name"
                         android:layout_marginLeft="@dimen/_15sdp"
                         android:layout_centerVertical="true"
-                        android:textSize="@dimen/_14sdp"
+                        android:textSize="@dimen/_12sdp"
                         android:text="Wash"
                         android:textStyle="bold"
                         android:layout_weight="1"
@@ -155,10 +160,11 @@
                     </TextView>
 
                     <TextView
+                        android:id="@+id/tv_ServicePrice"
                         android:layout_marginRight="@dimen/_10sdp"
                         android:layout_alignParentRight="true"
                         android:layout_centerVertical="true"
-                        android:textSize="@dimen/_14sdp"
+                        android:textSize="@dimen/_12sdp"
                         android:text="+$9.00"
                         android:textStyle="bold"
                         android:layout_weight="1"
@@ -170,82 +176,7 @@
 
                 </RelativeLayout>
 
-                <RelativeLayout
-                    android:elevation="@dimen/_7sdp"
-                    android:background="@drawable/bg_rounded10"
-                    android:layout_marginTop="@dimen/_10sdp"
-                    android:layout_marginRight="@dimen/_10sdp"
-                    android:layout_marginLeft="@dimen/_10sdp"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/_45sdp"
-                    >
 
-                    <TextView
-                        android:layout_marginLeft="@dimen/_15sdp"
-                        android:layout_centerVertical="true"
-                        android:textSize="@dimen/_14sdp"
-                        android:text="X-cut"
-                        android:textStyle="bold"
-                        android:layout_weight="1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-
-                    </TextView>
-
-                    <TextView
-                        android:layout_marginRight="@dimen/_10sdp"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerVertical="true"
-                        android:textSize="@dimen/_14sdp"
-                        android:text="+$9.00"
-                        android:textStyle="bold"
-                        android:layout_weight="1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-
-                    </TextView>
-
-
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:elevation="@dimen/_7sdp"
-                    android:layout_marginBottom="@dimen/_10sdp"
-                    android:background="@drawable/bg_rounded10"
-                    android:layout_marginTop="@dimen/_10sdp"
-                    android:layout_marginRight="@dimen/_10sdp"
-                    android:layout_marginLeft="@dimen/_10sdp"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/_45sdp"
-                    >
-
-
-                    <TextView
-                        android:layout_marginLeft="@dimen/_15sdp"
-                        android:layout_centerVertical="true"
-                        android:textSize="@dimen/_14sdp"
-                        android:text="Y- Cut"
-                        android:textStyle="bold"
-                        android:layout_weight="1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-
-                    </TextView>
-
-                    <TextView
-                        android:layout_marginRight="@dimen/_10sdp"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerVertical="true"
-                        android:textSize="@dimen/_14sdp"
-                        android:text="+$9.00"
-                        android:textStyle="bold"
-                        android:layout_weight="1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-
-                    </TextView>
-
-                </RelativeLayout>
 
                 <TextView
                     android:fontFamily="@font/poppins_regular"
@@ -254,7 +185,7 @@
                     android:layout_marginLeft="@dimen/_10sdp"              android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Charges"
-                    android:textColor="@color/black"
+                    android:textColor="@color/dark"
                     android:textSize="@dimen/_16sdp"
                     android:textStyle="bold" />
 
@@ -281,6 +212,7 @@
                     </TextView>
 
                     <TextView
+                        android:id="@+id/tv_ServiceCost"
                         android:layout_alignParentRight="true"
                         android:layout_centerVertical="true"
                         android:textSize="@dimen/_16sdp"
@@ -316,6 +248,7 @@
                     </TextView>
 
                     <TextView
+                        android:id="@+id/tv_Tax"
                         android:layout_alignParentRight="true"
                         android:layout_centerVertical="true"
                         android:textSize="@dimen/_16sdp"
@@ -344,12 +277,13 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="SubTotal"
-                        android:textColor="@color/black"
+                        android:textColor="@color/dark"
                         android:textSize="@dimen/_16sdp"
                         android:textStyle="bold" />
 
 
                     <TextView
+                        android:id="@+id/tv_Total"
                         android:layout_alignParentRight="true"
                         android:layout_centerVertical="true"
                         android:textSize="@dimen/_16sdp"
@@ -397,6 +331,13 @@
             </TextView>
 
         </RelativeLayout>
+
+        <include
+            android:id="@+id/loader_layout"
+            layout="@layout/loader"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
 
     </RelativeLayout>
 

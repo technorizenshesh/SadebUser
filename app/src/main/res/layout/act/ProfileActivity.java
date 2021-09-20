@@ -11,7 +11,7 @@ import com.example.ubook.databinding.ActivityProfileBinding;
 
 public class ProfileActivity extends AppCompatActivity {
 
-    ActivityProfileBinding binding;
+    private ActivityProfileBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

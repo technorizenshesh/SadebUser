@@ -5,7 +5,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/bg_home">
+        android:background="@drawable/gradient">
 
         <ImageView
             android:layout_width="@dimen/_165sdp"
@@ -45,6 +45,7 @@
 
 
             <TextView
+                android:layout_marginBottom="@dimen/_60sdp"
                 android:id="@+id/txtSingup"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -52,7 +53,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
                 android:layout_gravity="center_vertical"
-                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_16sdp"
                 android:background="@drawable/bg_blue_border"
                 android:elevation="@dimen/_10sdp"
                 android:fontFamily="@font/poppins_regular"

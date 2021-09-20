@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
     <RelativeLayout
+        android:background="@drawable/gradient"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".activity.LoginActivity">
@@ -13,20 +15,17 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/_50sdp">
 
-            <RelativeLayout
-                android:id="@+id/RRBack"
-                android:layout_width="@dimen/_50sdp"
-                android:layout_height="match_parent">
+            <ImageView
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/backnew"
+                android:padding="@dimen/_5sdp"
+                android:id="@+id/iv_Back"
+                android:layout_gravity="center_vertical"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp">
 
-                <ImageView
-                    android:layout_centerInParent="true"
-                    android:src="@drawable/backnew"
-                    android:layout_width="@dimen/_25sdp"
-                    android:layout_height="@dimen/_25sdp">
-
-                </ImageView>
-
-            </RelativeLayout>
+            </ImageView>
 
             <TextView
                 android:gravity="center"
@@ -38,8 +37,8 @@
                 android:layout_gravity="center"
                 android:fontFamily="@font/poppins_regular"
                 android:text="Gender"
-                android:textColor="@color/black"
-                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/dark"
+                android:textSize="@dimen/_16sdp"
                 android:textStyle="bold" />
 
         </LinearLayout>
@@ -70,32 +69,84 @@
                     android:textSize="@dimen/_14sdp"
                     android:textStyle="bold" />
 
-                <EditText
-                    android:drawableLeft="@drawable/mail1"
-                    android:drawablePadding="@dimen/_8sdp"
-                    android:paddingLeft="@dimen/_10sdp"
-                    android:background="@drawable/bg_roundedd"
-                    android:layout_marginRight="@dimen/_10sdp"
-                    android:layout_marginLeft="@dimen/_10sdp"
-                    android:id="@+id/et_Emaillogin"
+                <LinearLayout
+                    android:layout_marginHorizontal="@dimen/_12sdp"
+                    android:background="@drawable/bg_stroke_blue"
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/_50sdp"
-                    android:fontFamily="@font/poppins_regular"
-                    android:hint="Maximus"
-                    android:inputType="textEmailAddress"
-                    android:textColor="@color/natural_gray" />
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
 
 
-                <TextView
-                    android:layout_margin="@dimen/_10sdp"
-                    android:gravity="center"
-                    android:layout_width="wrap_content"
+                        <Spinner
+                            android:layout_marginHorizontal="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:layout_alignRight="@+id/Gender"
+                            android:id="@+id/spinner"
+                            android:textAlignment="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_32sdp" />
+
+                </LinearLayout>
+
+
+                <androidx.cardview.widget.CardView
+                    android:background="@color/white"
+                    android:layout_margin="@dimen/_12sdp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/poppins_regular"
-                    android:text="we will send verification to your new Email"
-                    android:textColor="@color/natural_blue"
-                    android:textSize="@dimen/_13sdp"
-                    android:textStyle="bold" />
+                    app:cardCornerRadius="@dimen/_4sdp"
+                    android:elevation="@dimen/_5sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_Male"
+                            android:layout_margin="@dimen/_12sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="Male"
+                            android:textColor="@color/blue"
+                            android:textSize="@dimen/_12sdp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_Female"
+                            android:layout_marginBottom="@dimen/_12sdp"
+                            android:layout_marginLeft="@dimen/_12sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="Female"
+                            android:textColor="@color/natural_gray"
+                            android:textSize="@dimen/_12sdp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_Other"
+                            android:layout_marginBottom="@dimen/_12sdp"
+                            android:layout_marginLeft="@dimen/_12sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="Ohter"
+                            android:textColor="@color/natural_gray"
+                            android:textSize="@dimen/_12sdp"
+                            android:textStyle="bold" />
+
+
+
+                    </LinearLayout>
+
+
+
+
+                </androidx.cardview.widget.CardView>
+
+
 
             </LinearLayout>
 
@@ -106,7 +157,7 @@
         <TextView
             android:layout_margin="@dimen/_10sdp"
             android:layout_alignParentBottom="true"
-            android:id="@+id/loginID"
+            android:id="@+id/tv_Save"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
@@ -124,6 +175,11 @@
             android:textSize="@dimen/_14sdp"
             android:textStyle="bold"
             tools:ignore="RtlCompat" />
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/loader"
+            android:id="@+id/loader_layout"/>
 
     </RelativeLayout>
 

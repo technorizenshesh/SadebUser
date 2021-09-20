@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <RelativeLayout
+        android:background="@drawable/gradient"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".activity.LoginActivity">
@@ -13,20 +14,17 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/_50sdp">
 
-            <RelativeLayout
-                android:id="@+id/RRBack"
-                android:layout_width="@dimen/_50sdp"
-                android:layout_height="match_parent">
+            <ImageView
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/backnew"
+                android:padding="@dimen/_5sdp"
+                android:id="@+id/iv_Back"
+                android:layout_gravity="center_vertical"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp">
 
-                <ImageView
-                    android:layout_centerInParent="true"
-                    android:src="@drawable/backnew"
-                    android:layout_width="@dimen/_25sdp"
-                    android:layout_height="@dimen/_25sdp">
-
-                </ImageView>
-
-            </RelativeLayout>
+            </ImageView>
 
             <TextView
                 android:gravity="center"
@@ -38,8 +36,8 @@
                 android:layout_gravity="center"
                 android:fontFamily="@font/poppins_regular"
                 android:text="Phone Number"
-                android:textColor="@color/black"
-                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/dark"
+                android:textSize="@dimen/_16sdp"
                 android:textStyle="bold" />
 
         </LinearLayout>
@@ -70,22 +68,30 @@
                     android:textSize="@dimen/_14sdp"
                     android:textStyle="bold" />
 
-                <EditText
-                    android:drawableLeft="@drawable/mail1"
-                    android:drawablePadding="@dimen/_8sdp"
-                    android:paddingLeft="@dimen/_10sdp"
-                    android:background="@drawable/bg_roundedd"
-                    android:layout_marginRight="@dimen/_10sdp"
-                    android:layout_marginLeft="@dimen/_10sdp"
-                    android:id="@+id/et_Emaillogin"
+                <LinearLayout
+                    android:layout_marginHorizontal="@dimen/_12sdp"
+                    android:background="@drawable/bg_stroke_blue"
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/_50sdp"
-                    android:fontFamily="@font/poppins_regular"
-                    android:hint="(307) 0000000"
-                    android:inputType="textEmailAddress"
-                    android:textColor="@color/natural_gray" />
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
 
+                    <EditText
+                        android:drawableLeft="@drawable/ic_mob"
+                        android:background="@null"
+                        android:layout_marginVertical="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:id="@+id/etNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:hint="(307) 00000 00000"
+                        android:drawablePadding="@dimen/_8sdp"
+                        android:inputType="number"
+                        android:maxLength="12"
+                        android:textColor="@color/natural_gray" />
 
+                </LinearLayout>
             </LinearLayout>
 
 
@@ -95,7 +101,7 @@
         <TextView
             android:layout_margin="@dimen/_10sdp"
             android:layout_alignParentBottom="true"
-            android:id="@+id/loginID"
+            android:id="@+id/btn_Save"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
@@ -113,6 +119,13 @@
             android:textSize="@dimen/_14sdp"
             android:textStyle="bold"
             tools:ignore="RtlCompat" />
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/loader"
+            android:id="@+id/loader_layout"/>
+
 
     </RelativeLayout>
 
